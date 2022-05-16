@@ -1,15 +1,15 @@
-function addServices(params){
+function addServices(params = {}){
 
     const template = document.querySelector("#services__card-template")
     const container = document.querySelector(".services__card-container")
-    console.log(params.img)
+  //    
+    template.content.querySelector('#card-title').textContent = params.title
+    template.content.querySelector('#card-text').textContent = params.text
+    template.content.querySelector('#card-img').src = params.img
 
-    /* 
-    template.document.querySelector(".services__card-title").textContent = params.title
-    template.document.querySelector(".services__card-text").textContent = params.text
-const clone = document.importNode(template.content , true)
-container.appendChild(clone)
-*/
+
+    const clone = document.importNode(template.content , true)
+    container.appendChild(clone)
     
 };
 
@@ -18,15 +18,16 @@ function getServices (){
     ).then((res) => {
        return res.json()
     }).then((data) => {
-        console.log(data)
+        const img = data.includes.Asset[0].fields.file.url
         const serviceCollec = data.items.map((it) => {
+
             return {
                 title : it.fields.title ,
                 text : it.fields.description ,
-                img : it.fields.imagen.sys
+                img : img
             }
         })
-        return serviceCollec    
+        return serviceCollec   
     })
     
 }
@@ -35,10 +36,9 @@ function getServices (){
 
 
 function main(){
-    getServices().then((services) => {
-        for (const serv of services){
-            addServices(serv)
-        }
+    getServices().then((s) => {
+        for (const serv of s)
+        addServices(serv)
     })
 }
 main();
