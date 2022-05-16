@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.home{
+    padding: 20px;
+    
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        background-size: 300% 300%;
+        background-image: linear-gradient(
+              -45deg, 
+              rgb(5, 6, 13) 0%, 
+              rgb(199, 60, 0)25%, 
+              rgb(68, 0, 87) 51%, 
+              rgb(0, 0, 0) 100%
+        );  
+        animation: AnimateBG 20s ease infinite;
+}
+      
+      @keyframes AnimateBG { 
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+      }
+
+.logo{
+    font-family: "Orbitron";
+    color: #fff;
+    font-size: 35px;
+    min-height: 40px;
+    min-width: 40px;
+    margin: 0;
+    
+}
+.head__content{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: center;
+    padding-bottom:15px ;
+    border-bottom: 10px #fff groove;
+}
+.head__main{
+    min-width: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.head__main-bars{
+    height: 5px;
+    width: 40px;
+    background-color: #fff;
+    margin-bottom: 5px;
+}
+
+.head__explain-main{
+    display: none;
+}
+.home__title{
+    text-align: center;
+    margin: 0;
+    font-size: 9vw;
+    
+    color: #fff;
+}
+.home_content{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.presentation{
+    background-image: url(../images/image-v.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    padding: 40px;
+    
+}
+@media(min-width:600px){
+    .presentation{
+        background-image: url(../images/image-h.png);
+    }
+    
+}
+.presentation__title{
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 50px;
+
+}
+.presentation__p{
+    color: #fff;
+    text-align: center;
+    font-size: 35px;
+}
+.services{
+    height: 80vh;
+    background-color:#fff ;
+    padding: 40px;
+}
+.services__title{
+    margin: 0;
+    font-size: 40px;
+    text-align: center;
+    color: #000;
+}
