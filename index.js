@@ -31,10 +31,6 @@ function getServices (){
     })
     
 }
-
-
-
-
 function main(){
     getServices().then((s) => {
         for (const serv of s)
