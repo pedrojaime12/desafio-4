@@ -36,5 +36,10 @@ function main(){
         for (const serv of s)
         addServices(serv)
     })
+    contactComponent(document.querySelector(".contacto"))
+    headerComponent(document.querySelector(".header"))
+    footerComp(document.querySelector(".footerComp"))
+    expandMain()
+
 }
 main();

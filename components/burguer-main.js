@@ -12,9 +12,3 @@ function expandMain(){
     }))
 }
 
-
-function main(){
-    expandMain()
-    
-}
-main()

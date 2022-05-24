@@ -4,36 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./pages/index.css">
+    <link rel="stylesheet" href="./pages/contacto.css">
+    <link rel="stylesheet" href="./components/header.css">
+    <link rel="stylesheet" href="./components/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
     
     <title>Desafio m-4</title>
-    <script defer src="./burguer-main.js"></script>
-    <script defer src="./index.js"></script>
+    <script defer src="./components/burguer-main.js"></script>
+    <script defer src="./components/header.js"></script>
+    <script defer src="./components/footer.js"></script>
+    <script defer src="./pages/contacto.js"></script>
+    <script defer src="./pages/index.js"></script>
 </head>
 <body>
     <section class="home">
-        <header class="head__content">
-            <div class="logo-content">
-                <h1 class="logo">
-                    PEPE
-                </h1>
-            </div>
-            <div class="head__main" onclick="toggleMenu(this)">
-                <span class="head__main-bars"></span>
-                <span class="head__main-bars"></span>
-                <span class="head__main-bars"></span>
-            </div>
-            <div class="head__expand-main">
-                <div class="head__expand-main-container">
-                    <a class="head__expand-main-el" href=""> Contacto</a>
-                    <a class="head__expand-main-el" href=""> Mis servicios</a>
-                    <a class="head__expand-main-el" href=""> Portfolio</a>
-                </div>
-            </div>
-        </header>
+        <section class="header"></section>
         <div class="home_content">
             <h1 class="home__title"> Bienvenidos</h1>
             <h1 class="home__title">Soy Pepe /></h1>
@@ -61,39 +49,9 @@
             </template>
         </div>
     </section>
-    <section class="contact">
-        <div class="contact__container">
-            <h2 class="contact__title">
-                Contactame :
-            </h2>
-            <form action="submit">
-                <div class="contact__form-group">
-                    <input class="contact__input" type="text" name="nombre" id="name" placeholder="Tu nombre">
-                    <input class="contact__input" type="text" name="email" id="email" placeholder="Tu email">
-                    <textarea class="contact__textarea" name="message" id="message" cols="30" rows="10" placeholder="Tu mensaje"></textarea>
-                    <button class="contact__button" type="reset"> Enviar </button>
-                </div>
-            </form>
-        </div>
-    </section>
-    <footer class="footer">
-        <div class="footer__container">
-            <h1 class="logo" id="footer-logo"> PEPE </h1>
-            <div class="footer__redes-container">
-                <div class="redes">
-                    <p class="red__title">Instagram</p>
-                    <img class="red__img" src="./images/instagram.png" alt="">
-                </div>
-                <div class="redes">
-                    <p class="red__title">Github</p>
-                    <img class="red__img" src="./images/github.png" alt="">
-                </div>
-                <div class="redes">
-                    <p class="red__title">Linkedin</p>
-                    <img class="red__img" src="./images/linkedin.png" alt="">
-                </div>
-            </div>
-        </div>
-    </footer>
+    <div class="contacto">
+    
+    </div>
+   <section class="footerComp"></section>
 </body>
 </html>

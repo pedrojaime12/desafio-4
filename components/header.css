@@ -1,0 +1,123 @@
+.body{
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+.logo{
+    font-family: "Orbitron";
+    color: #fff;
+    font-size: 35px;
+    min-height: 40px;
+    min-width: 40px;
+    margin: 0;
+    text-decoration:underline blueviolet
+}
+
+.head__content{
+    background: local;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: center;
+    padding:15px ;
+    border-bottom: 10px #fff groove;
+}
+.head__main{
+    min-width: 20px;
+    display: flex;
+    flex-direction: column;
+}
+@media(min-width:1000px){
+    .head__main{
+        display: none
+    };
+}
+.head__main:hover{
+    cursor: pointer;
+}
+.head__main span:nth-child(1){
+    background-color: rgb(255, 247, 0);
+}
+.head__main span:nth-child(2){
+    background-color: #fff;
+}
+.head__main span:nth-child(3){
+    background-color: rgb(255, 247, 0);
+}
+.head__main.open span:nth-child(1){
+    transform: rotate(45deg) ; 
+    position: absolute;
+    right: 30px;
+}
+.head__main.open span:nth-child(3){
+    display: none;
+    
+}
+.head__main.open span:nth-child(2){
+    transform: rotate(-45deg) ;
+    position: absolute;
+    right: 30px;
+}
+
+.head__main-bars{
+    height: 5px;
+    width: 40px;
+    background-color: #fff;
+    margin-bottom: 5px;
+    transition: all 0.05s ease-in-out;  
+}
+.head__main.open{
+    top: 50%;
+    bottom: 50%;    
+}
+.head__expand-main{
+    display: none;
+}
+@media(min-width:1000px){
+    .head__expand-main{
+        display: flex;
+        align-items: center;
+    }
+}    
+.head__expand-main-container{
+    background-image: linear-gradient(200deg, rgb(255, 247, 0), rgb(255, 255, 255));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 120px;
+    right: 50px;
+    left: 50px;
+    bottom:80px;
+}
+@media(min-width:1000px){
+    .head__expand-main-container{
+        flex-direction: row;
+        background-image: inherit;
+        position: inherit;
+        justify-content: center;
+        align-items: center;
+    }
+}    
+.head__expand-main.expand{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.head__expand-main-el{
+    color: #000;
+    font-size: 30px;
+    margin-bottom: 40px;
+    text-decoration: none;
+    font-weight: 1000;
+}
+@media(min-width:1000px){
+    .head__expand-main-el{
+        color: rgb(255, 247, 0);
+        margin-right: 25px;
+        margin-bottom: 0;
+        font-size: 25px;
+
+    }
+}   
