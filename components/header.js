@@ -1,7 +1,6 @@
 function headerComponent(el){
     const componentEl = document.createElement("div")
-    el.innerHTML = 
-    `
+    componentEl.innerHTML = `
 <header class="head__content">
             <div class="logo-content">
             <a href="./index.html">
@@ -23,8 +22,7 @@ function headerComponent(el){
                     <a class="head__expand-main-el" href="./contacto.html"> Contacto</a>
                 </div>
             </div>
-        </header>
-    `
+        </header>`
     el.appendChild(componentEl)
 }
 

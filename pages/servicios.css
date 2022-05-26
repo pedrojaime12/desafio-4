@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+.service__presentation{
+    background-color: red;
+    height: 80vh;
+}
+@media(max-width:1000px){
+    .service__presentation{
+        background-color: #000;
+        height: 300px;
+    }
+}
+.services__card-container{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+
+}
+@media(min-width:1000px){
+    .services__card-container{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+}
+
+.services__cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 20px;
+    width: 300px;
+}
+
+.services{
+    padding: 40px;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: linear-gradient(180deg, rgb(0, 0, 0), rgb(146, 146, 146)) ;
+    border-bottom: #000 3px solid;
+
+}
+.services__title{
+    margin:  0;
+    margin-top: 40px;
+    padding: 80px;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    
+}
+
+.services__card-title{
+    font-size: 25px;
+    color: #fff;
+    margin: 0;
+    margin-bottom: 5px;
+
+}
+.services__card-text{
+    font-size: 18px;
+    color: #fff;
+    margin: 0;
+    text-align: center;
+    
+
+}
+.services__card-img{
+    height: 250px;
+    min-width: 250px;
+}
