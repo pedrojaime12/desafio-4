@@ -71,8 +71,12 @@ body{
     margin: 0;
     color: #fff;
     text-align: center;
-    font-size: 30px;
-
+    font-size: 40px;
+}
+@media(max-width:1000px){
+    .presentation__title{
+        font-size: 25px;
+    }
 }
 .presentation__p{
     color: #fff;

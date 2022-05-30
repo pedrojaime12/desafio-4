@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="/components/header.css">
     <link rel="stylesheet" href="./components/footer.css">
+    <link rel="stylesheet" href="./pages/servicios.css">
     <link rel="stylesheet" href="./pages/portfolio.css">
 
 
@@ -18,6 +19,7 @@
 
     <script defer src="./components/burguer-main.js"></script>
     <script defer src="./components/header.js"></script>
+    
     <script defer src="./components/footer.js"></script>
     <script defer src="./pages/portfolio.js"></script>
     
@@ -26,11 +28,28 @@
 
 </head>
 <body>
-    <section class="portfolio">
+    <section class="portfolio-presentation">
 
-        <section class="headerComp"></section>
+        <section class="headerComponent"></section>
+        <h2 class="portfolio__title"> Mis Trabajos</h2>
 
     </section>
+    <section class="portfolio">
+        <div class="works__card-container">
+            <template class="works__card-template">
+            <div class="work__cards">
+    
+            <img id="card-img" class="works__card-img" src="" alt="">
+            <h4 id="card-title" class="works__card-title"> </h4>
+            <p id="card-text" class="works__card-text"> </p>
+            <a class="workds__card-url" href=""> Ver más </a>
+    
+            </div>
+            </template>
+           
+            </div>
+    </section>
+  
     <section class="footerComp"></section>
 </body>
 </html>

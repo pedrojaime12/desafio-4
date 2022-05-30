@@ -5,6 +5,86 @@ body{
 
 }
 
+.portfolio-presentation{
+    background-color: blue;
+    height: 80vh;
+
+}
+@media(max-width:1000px){
+    .portfolio-presentation{
+        background-color: rgb(0, 0, 0);
+        height: 300px;
+    }
+}
+.portfolio__title{
+        margin:  0;
+        margin-top: 40px;
+        padding: 80px;
+        font-size: 50px;
+        font-weight: bold;
+        text-align: center;
+        color: rgb(255, 255, 255);
+    }
+    @media(max-width:1000px){
+        .portfolio__title{
+            font-size: 25px;
+    }
+}
+
+
+.works__card-container{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+@media(min-width:1000px){
+    .works__card-container{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+}
+.works__card-template{}
 .portfolio{
-    background-color: black   
+    padding: 40px;
+    height: 130vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: linear-gradient(180deg, rgb(0, 0, 0), rgb(146, 146, 146));
+    padding: 20px;
+}
+.work__cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 20px;
+    width: 300px;
+    margin-top: 20px;
+}
+.works__card-img{
+        height: 250px;
+        width: 250px;
+        
+}
+@media(max-width:1000px){
+        .services__card-img{
+            height: 200px;
+            width: 200px;
+    }
+}
+.works__card-title{
+    font-size: 25px;
+    color: #fff;
+    margin: 0;
+    margin-bottom: 5px;
+}
+.works__card-text{
+    font-size: 18px;
+    color: #fff;
+    margin: 0;
+    text-align: center;
 }

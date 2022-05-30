@@ -42,7 +42,7 @@ body{
 
 .services{
     padding: 40px;
-    height: 120vh;
+    height: 130vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -58,7 +58,11 @@ body{
     font-weight: bold;
     text-align: center;
     color: rgb(255, 255, 255);
-    
+}
+@media(max-width:1000px){
+    .services__title{
+        font-size: 25px;
+    }
 }
 
 .services__card-title{
@@ -66,6 +70,7 @@ body{
     color: #fff;
     margin: 0;
     margin-bottom: 5px;
+    text-align: center;
 
 }
 .services__card-text{
@@ -78,5 +83,12 @@ body{
 }
 .services__card-img{
     height: 250px;
-    min-width: 250px;
+    width: 250px;
+}
+@media(max-width:1000px){
+    .services__card-img{
+        height: 200px;
+        width: 200px;
+    }
+   
 }

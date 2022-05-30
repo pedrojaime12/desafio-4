@@ -19,6 +19,7 @@ function serviceComponent (el) {
 
     el.appendChild(componentEl)
 }
+
 function addServices(params = {}){
     
 
@@ -34,8 +35,9 @@ function addServices(params = {}){
     
     
 };
+
 function getServices (){
-    return fetch("https://cdn.contentful.com/spaces/fm0ijh10fg33/environments/master/entries?access_token=lk64VefFQM6JUIP6CzJMYEbbwGWI48hnTkhJcHs7NtA"
+    return fetch("https://cdn.contentful.com/spaces/fm0ijh10fg33/environments/master/entries?access_token=lk64VefFQM6JUIP6CzJMYEbbwGWI48hnTkhJcHs7NtA&content_type=services"
     ).then((res) => {
        return res.json()
     }).then((data) => {
