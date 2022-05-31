@@ -65,13 +65,20 @@ body{
     width: 300px;
     margin-top: 20px;
 }
+@media(max-width:1000px){
+    .work__cards{
+    margin-right: 0;
+}
+}
+
+
 .works__card-img{
         height: 250px;
         width: 250px;
         
 }
 @media(max-width:1000px){
-        .services__card-img{
+        .works__card-img{
             height: 200px;
             width: 200px;
     }
