@@ -42,7 +42,7 @@ body{
 
 .services{
     padding: 40px;
-    height: 130vh;
+    height: 160vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
